@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Karur Tech Solution</title>
+
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .headfixed {
+      position: fixed;
+    }
+
+    .homeheader {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1px;
+
+    }
+
+    .homeheaderbg {
+      background-color: rgb(241, 253, 241);
+    }
+
+    .homeheader img {
+      width: 12%;
+      height: 86px;
+    }
+
+    .homeheader>nav.headernav {
+      display: flex;
+    }
+
+    .homeheader>nav.headernav li {
+      margin-top: 28px;
+      list-style-type: none;
+      padding: 7px;
+
+      font-size: 18px;
+      margin-right: 30PX;
+    }
+
+    a.link {
+      margin-right: 50px;
+      text-decoration: none;
+      padding: 1px;
+      color: rgb(3, 36, 3);
+    }
+
+    a.link:hover {
+      color: rgb(223, 28, 28);
+    }
+
+
+
+    .centered {
+
+      position: absolute;
+      text-align: center;
+      color: white;
+      top: 20%;
+      left: 20%;
+      right: 20%;
+      line-height: 35px;
+
+
+    }
+
+    .section-container {
+      display: flex;
+      margin: 0px;
+      color: white;
+      text-align: left;
+      line-height: 50px;
+
+    }
+
+    .secone {
+      margin-top: 350px;
+      padding-left: 200px;
+
+
+    }
+
+    .sectwo {
+      margin-top: 350px;
+      padding-left: 200px;
+
+    }
+
+    .secthree {
+      margin-top: 350px;
+      padding-left: 200px;
+
+
+    }
+
+    .centered>p {
+      font-size: 20px;
+      line-height: 50px;
+    }
+
+    .backgrdimg {
+      height: 696px;
+      background-size: cover;
+      background-image: linear-gradient(rgba(62, 163, 62, 0.8), rgba(3, 3, 3, 0.8)), url("logo.jpeg");
+    }
+
+    .col-container {
+      display: flex;
+      line-height: 35px;
+      background-color: lavenderblush;
+
+    }
+
+    .colone {
+      width: 35%;
+      padding: 100px;
+      margin-left: 100px;
+    }
+
+
+    .coltwo {
+      width: 35%;
+      padding: 10px;
+      margin-top: 100px;
+
+    }
+
+    .col-container p {
+      font-size: 20px;
+    }
+
+    .col-container h1 {
+      font-size: 40px;
+    }
+
+    img.colimg {
+      width: 80%;
+      height: 250px;
+      border-radius: 50%;
+    }
+
+    .sectiontwo {
+      background-color: lavender;
+      text-align: center;
+      padding-right: 300px;
+      padding-left: 300px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      line-height: 40px;
+    }
+
+    .sectiontwo p {
+      font-size: 18px;
+    }
+
+    .nexttech {
+      display: flex;
+      line-height: 45px;
+      background-color: lavenderblush;
+
+    }
+
+    .techone {
+      width: 30%;
+      padding: 100px;
+      margin-left: 100px;
+
+    }
+
+
+    .techtwo {
+      width: 50%;
+      padding: 10px;
+      margin-top: 100px;
+
+    }
+
+    .whyus {
+      background-color: lightcyan;
+      text-align: center;
+      padding-right: 200px;
+      padding-left: 200px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      line-height: 40px;
+    }
+
+    .whyus p {
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    .footer-container {
+      display: flex;
+      background-color: rgb(174, 252, 167);
+      color: rgb(10, 39, 10);
+      padding-left: 200px;
+      padding-top: 60px;
+      padding-bottom: 30px;
+
+    }
+
+    .footer-container li {
+      list-style-type: none;
+      line-height: 35px;
+    }
+
+    img.footerimg {
+      width: 60%;
+      height: 120px;
+    }
+
+    .footer-container p:hover {
+      cursor: pointer;
+    }
+
+    .footerone {
+      width: 20%;
+      padding: 20px;
+    }
+
+    .footertwo {
+      width: 20%;
+      padding: 20px;
+    }
+
+    .footerthree {
+      width: 15%;
+      padding: 20px;
+    }
+
+    .footerfour {
+      width: 20%;
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .sectiontwo {
+     
+      padding-right: 50px;
+      padding-left: 50px;
+     
+    }
+    .techone {
+      width: 30%;
+      padding: 150px;
+      margin-left: 5px;
+
+    }
+    .sectiontwo {
+     
+      padding-right: 00px;
+      padding-left: 00px;
+     
+    }
+
+    
+      .whyus {
+     
+      padding-right: 10px;
+      padding-left: 10px;
+    
+    }
+      .footer-container {
+        padding-left: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="headfixed">
+      <div class="homeheaderbg">
+        <div class="homeheader">
+          <img src="logo.jpeg" />
+
+          <nav span class="headernav">
+
+            <li><a class="link" href="#">HOME</a></li>
+            <li><a class="link" href="#">SERVICES</a></li>
+            <li><a class="link" href="#">PORTFOLIO</a></li>
+            <li><a class="link" href="#">TECHNOLOGIES</a></li>
+            <li><a class="link" href="#">JOBS</a></li>
+            <li><a class="link" href="#">ABOUT</a></li>
+            <li><a class="link" href="#">CONTACT</a></li>
+          </nav>
+        </div>
+      </div>
+  </header>
+  <div class="backgrdimg">
+    <div class="centered">
+      <p>Karur Tech Solutions is one of the largest, globally recogized outsourcing agencies in the industry, empowering
+        bussinesses across thr globe to build a better digitial ecosystem.</p>
+    </div>
+    <div class="section-container">
+      <div class="secone">
+        <h2>Front-End Development</h2>
+        <h2>WordPress Development</h2>
+        <h2>HubSpot Development</h2>
+        <h2>UI/UX Design</h2>
+      </div>
+      <div class="sectwo">
+        <h2>Back-End Development</h2>
+        <h2>Search Engine Optimization</h2>
+        <h2>Search Engine Marketing</h2>
+        <h2>Programmatic Advertising</h2>
+      </div>
+      <div class="secthree">
+        <h2>Salesforce Automation</h2>
+        <h2>Marketo Automation</h2>
+        <h2>Email Marketing</h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-container">
+    <div class="colone">
+      <h1>Accelerate Your Digital</h1>
+      <h1>Transformation Journey</h1>
+      <p>Delivering Simple Solutions For Complex Business Problems</p>
+    </div>
+    <div class="coltwo">
+      <img span class="colimg" src="background.jpg" />
+    </div>
+  </div>
+  <div class="col-container">
+    <div class="colone">
+      <img span class="colimg" src="backgrd.png" />
+    </div>
+    <div class="coltwo">
+      <h1>Leveraging Technology</h1>
+      <p>Maximise your business potential with the state of art mobile and web apps from us.</p>
+    </div>
+  </div>
+  <div class="sectiontwo">
+    <h1>Your Life's Work, Powered By Our Life's Work</h1>
+    <p>Unique and powerful suite of software to run your entire business, brought to you by a company with the long term
+      vision to transform the way you work.</p>
+    <h1>Services</h1>
+    <P>We work in variety of domains and offer an impressive service when it comes to business. By keeping in mind that
+      today is a necessity, we are always shaping a better tomorrow.</P>
+    <h1>Technologies</h1>
+    <p>We have expertise in all types of popular tech stack and offer the top trending technologies on demand. We are
+      keen in providing our clients with the best possible technology which we always consider to be a part of a valued
+      service.</p>
+  </div>
+  <div class="nexttech">
+    <div class="techone">
+      <h1>TECHNOLOGY FOR THE NEXT DECADE, TODAY</h1>
+    </div>
+    <div class="techtwo">
+      <li> Enhanced digital technology footprint to deliver transformation at scale</li>
+      <li> Next-gen IPs, products and platforms that future-proof our customers' businesses</li>
+      <li> Culture of innovation powered by our unique ideapreneurship DNA </li>
+    </div>
+  </div>
+  <div class="whyus">
+    <h1>Why Us?</h1>
+    <p>Given the changing business landscape, it’s important for organizations to stay competitive in the race to meet
+      customer expectations. At Kovan Labs, our primary objective is to help organizations navigate through the digital
+      transformation journey with ease.</p>
+    <p>We’ll help you identify new business dimensions to stay competent, deploy technologies that top the trend charts,
+      and implement business process that will help you build next-generation ready systems that generate better
+      customer experiences.</p>
+    <h1>Products We Offer</h1>
+    <p>KTS aims to be at the forefront of technology, delivering innovative sensing, connectivity and motion solutions
+      to enable an intelligent and seamless world.</p>
+    <h1>Markets We Serve</h1>
+    <p>KTS serves an assortment of applications in a variety of markets spanning the globe like Aer & Defense,
+      Industrial, Medical, Telecom & IT,</p>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footerone">
+        <img span class="footerimg" src="logo.jpeg" />
+        <h3>Velayutham palayam</h3>
+        <h3>Karur, 639 117</h3>
+        <h3>India</h3>
+      </div>
+      <div class="footertwo">
+        <h2>Services</h2>
+        <li><a class="link" href="#">IT Team Augmentation</a></li>
+        <li><a class="link" href="#">Mobile App Development</a></li>
+        <li><a class="link" href="#">Web App Development</a></li>
+        <li><a class="link" href="#">Legacy App Migration</a></li>
+        <li><a class="link" href="#">Product Design</a></li>
+        <li><a class="link" href="#">Web & Mobile Analyics</a></li>
+      </div>
+      <div class="footerthree">
+        <h2>Company</h2>
+        <li><a class="link" href="#">Home</a></li>
+        <li><a class="link" href="#">Servies</a></li>
+        <li><a class="link" href="#">Portfolio</a></li>
+        <li><a class="link" href="#">Technologies</a></li>
+        <li><a class="link" href="#">Jobs</a></li>
+        <li><a class="link" href="#">About</a></li>
+      </div>
+      <div class="footerfour">
+        <h2>Contact</h2>
+        <li><strong>E-mail Id :</strong></li>
+        <li><a class="link" href="#">contactkts@kts.com</a></li>
+        <li><strong>Phone Number :</strong> </li>
+        <li><a class="link" href="#">+91 99526 64930</a></li>
+        <li><a class="link" href="#">+91 89737 81863</a></li>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </footer>
+  </div>
+</body>
+
+</html>

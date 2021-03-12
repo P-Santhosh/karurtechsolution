@@ -1,266 +1,474 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
 
-  .headfixed {
-    position: fixed;
-  }
+.headfixed {
+  position: fixed;
+  box-shadow: 0px 0px 10px 1px rgb(124, 124, 124);
+}
 
-  .homeheader {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 1px;
+.homeheader {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1px;
 
-  }
 
-  .homeheaderbg {
-    background-color: rgb(241, 253, 241);
+}
+
+h3:before {
+  content: '\2022';
+  display: none;
+}
+
+.homeheaderbg {
+  background-color: rgb(241, 253, 241);
+
+}
+
+.homeheader img {
+  width: 8%;
+
+}
+
+.homeheader>nav.headernav {
+  display: flex;
+
+}
+
+.homeheader>nav.headernav li {
+  padding-top: 40px;
+  list-style-type: none;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+
+a.link {
+
+  text-decoration: none;
+  justify-content: space-between;
+  color: rgb(3, 36, 3);
+}
+
+a.link:hover {
+  border-radius: 20px;
+  color: tomato;
+  padding: 8px 10px 8px 10px;
+  border: 1px solid rgb(144, 206, 206);
+  background-color: rgb(144, 206, 206);
+
+}
+
+
+
+
+.centered {
+
+  position: relative;
+  text-align: center;
+  color: black;
+  padding: 20px 100px 20px 100px;
+  line-height: 35px;
+
+
+}
+
+.section-container {
+  display: flex;
+
+  color: black;
+  text-align: left;
+  line-height: 50px;
+  padding: 20px 100px 20px 120px;
+
+}
+
+.secone {
+
+  padding-left: 150px;
+
+
+}
+
+.sectwo {
+
+  padding-left: 150px;
+
+}
+
+.secthree {
+
+  padding-left: 150px;
+
+
+}
+
+.centered>p {
+
+  line-height: 50px;
+}
+
+.backgrdimg {
+
+  background-size: cover;
+  background-image: linear-gradient(rgba(240, 245, 247, 0.8), rgb(230, 235, 238));
+}
+
+.col-container {
+  display: flex;
+  line-height: 1.5;
+  background-color: rgb(250, 242, 245);
+  padding: 50px 100px 50px 220px;
+  column-gap: 200px;
+}
+
+.colone {
+
+  width: 40%;
+  padding: 10px;
+
+}
+
+
+.coltwo {
+
+  width: 40%;
+  padding: 10px;
+
+
+}
+
+img.colimg {
+  width: 60%;
+
+
+}
+
+.sectiontwo {
+  background-color: rgb(243, 243, 253);
+  text-align: center;
+  padding-right: 300px;
+  padding-left: 300px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  line-height: 40px;
+}
+
+
+.nexttech {
+  display: flex;
+  line-height: 50px;
+  background-color: rgb(253, 247, 249);
+  padding: 30px 1px 30px 1px;
+}
+
+.techone {
+  width: 40%;
+  padding: 10px;
+  padding-left: 180px;
+
+}
+
+.techone img {
+  width: 70%;
+
+
+}
+
+
+.techtwo {
+  width: 50%;
+  padding: 10px;
+  margin-top: 50px;
+
+}
+
+.whyus {
+  background-color: rgb(239, 252, 252);
+  text-align: center;
+
+  line-height: 2.5;
+  padding: 50px 200px 50px 200px;
+}
+
+.whyus p {
+
+  text-align: justify;
+}
+
+.customerhead {
+  background-color: rgb(252, 251, 250);
+  text-align: center;
+  padding: 5px;
+  padding-top: 35px;
+}
+
+.customer {
+  display: flex;
+  background-color: rgb(252, 251, 250);
+  padding-top: 20px;
+  padding-left: 210px;
+  padding-bottom: 30px;
+
+}
+
+.customerone {
+  width: 30%;
+  padding: 10px;
+}
+
+.customertwo {
+  width: 30%;
+  padding: 10px;
+}
+
+.customerthree {
+  width: 30%;
+  padding: 10px;
+}
+
+.footer-container {
+  display: flex;
+  background-color: rgb(174, 252, 167);
+  color: rgb(10, 39, 10);
+
+  padding: 60px 200px 40px 280px;
+}
+
+.footer-container li {
+  list-style-type: none;
+  line-height: 35px;
+}
+
+img.footerimg {
+  width: 70%;
+
+}
+
+.footer-container p:hover {
+  cursor: pointer;
+}
+
+.footerone {
+  width: 25%;
+  padding: 20px;
+}
+
+.footertwo {
+  width: 25%;
+  padding: 20px;
+}
+
+.footerthree {
+  width: 20%;
+  padding: 20px;
+}
+
+
+.footerfour {
+  width: 25%;
+  padding: 20px;
+}
+
+@media screen and (max-width:1000px) {
+  body {
+    width: 100%;
+
   }
 
   .homeheader img {
-    width: 12%;
-    height: 86px;
+    width: 15%;
+
   }
+
 
   .homeheader>nav.headernav {
-    display: flex;
-  }
-
-  .homeheader>nav.headernav li {
-    margin-top: 28px;
-    list-style-type: none;
-    padding: 7px;
-
-    font-size: 18px;
-    margin-right: 30PX;
-  }
-
-  a.link {
-    margin-right: 50px;
-    text-decoration: none;
-    padding: 1px;
-    color: rgb(3, 36, 3);
-  }
-
-  a.link:hover {
-    color: rgb(223, 28, 28);
-  }
-
-
-
-  .centered {
-
-    position: absolute;
-    text-align: center;
-    color: white;
-    top: 20%;
-    left: 20%;
-    right: 20%;
-    line-height: 35px;
+    display: none;
 
 
   }
 
   .section-container {
-    display: flex;
-    margin: 0px;
-    color: white;
-    text-align: left;
-    line-height: 50px;
-
-  }
-
-  .secone {
-    margin-top: 350px;
-    padding-left: 200px;
+    display: block;
+    font-size: 10px;
+    padding: 10px 50px 20px 100px;
 
 
   }
 
-  .sectwo {
-    margin-top: 350px;
-    padding-left: 200px;
+  .centered {
+
+    position: relative;
+    text-align: justify;
+    color: black;
+    padding: 20px 50px 20px 50px;
+    line-height: 1.5;
+    font-size: 14px;
+
 
   }
 
-  .secthree {
-    margin-top: 350px;
-    padding-left: 200px;
-
-
-  }
-
-  .centered>p {
-    font-size: 20px;
-    line-height: 50px;
-  }
-
-  .backgrdimg {
-    height: 696px;
-    background-size: cover;
-    background-image: linear-gradient(rgba(62, 163, 62, 0.8), rgba(3, 3, 3, 0.8)), url("logo.jpeg");
-  }
 
   .col-container {
-    display: flex;
-    line-height: 35px;
-    background-color: lavenderblush;
-
+    display: block;
+    padding: 20px 50px 20px 250px;
   }
 
   .colone {
-    width: 35%;
-    padding: 100px;
-    margin-left: 100px;
+    width: 80%;
+    padding: 5px;
+
+
   }
 
 
   .coltwo {
-    width: 35%;
-    padding: 10px;
-    margin-top: 100px;
+    width: 80%;
+    padding: 5px;
+
 
   }
 
-  .col-container p {
-    font-size: 20px;
-  }
-
-  .col-container h1 {
-    font-size: 40px;
-  }
 
   img.colimg {
     width: 80%;
-    height: 250px;
-    border-radius: 50%;
+
+
   }
 
   .sectiontwo {
-    background-color: lavender;
-    text-align: center;
-    padding-right: 300px;
-    padding-left: 300px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    line-height: 40px;
-  }
+    text-align: justify;
 
-  .sectiontwo p {
-    font-size: 18px;
+    padding: 130px 35px 30px 35px;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .nexttech {
-    display: flex;
-    line-height: 45px;
-    background-color: lavenderblush;
+    display: block;
+    padding-left: 30px;
+
 
   }
 
   .techone {
-    width: 30%;
-    padding: 100px;
-    margin-left: 100px;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+
 
   }
+
+  .techone img {
+    width: 60%;
+
+
+  }
+
+
+
 
 
   .techtwo {
-    width: 50%;
+    width: 90%;
     padding: 10px;
-    margin-top: 100px;
-
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+    padding-left: 50px;
   }
 
   .whyus {
-    background-color: lightcyan;
-    text-align: center;
-    padding-right: 200px;
-    padding-left: 200px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    line-height: 40px;
-  }
-
-  .whyus p {
-    font-size: 18px;
     text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
+    padding: 50px 35px 50px 35px;
   }
 
-  .footer-container {
-    display: flex;
-    background-color: rgb(174, 252, 167);
-    color: rgb(10, 39, 10);
-    padding-left: 200px;
-    padding-top: 60px;
+
+
+  .customer {
+    display: block;
+
+    padding-top: 30px;
     padding-bottom: 30px;
 
   }
 
-  .footer-container li {
-    list-style-type: none;
-    line-height: 35px;
+
+  .customerone,
+  .customertwo,
+  .customerthree {
+
+    padding: 12px;
+    margin: 0px;
+
+    padding-left: 290px;
   }
 
-  img.footerimg {
-    width: 60%;
-    height: 120px;
+  h3::before {
+    display: inline-block;
+    padding-right: 12px;
+    font-size: 30px;
   }
 
-  .footer-container p:hover {
-    cursor: pointer;
+  .customer {
+
+
+    padding-left: 50px;
   }
+
+  .footer-container {
+    display: block;
+
+    font-size: 23px;
+    line-height: 2;
+    padding: 10px 100px 10px 200px;
+
+
+  }
+
+
 
   .footerone {
-    width: 20%;
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
+    line-height: 1;
+
   }
 
   .footertwo {
-    width: 20%;
-    padding: 20px;
+    width: 100%;
+    padding: 8px;
+
+
   }
 
   .footerthree {
-    width: 15%;
-    padding: 20px;
+    width: 100%;
+    padding: 8px;
+
   }
 
   .footerfour {
-    width: 20%;
-    padding: 20px;
+
+    width: 100%;
+    padding: 8px;
   }
 
-  @media screen and (max-width: 600px) {
-    .sectiontwo {
-   
-    padding-right: 50px;
-    padding-left: 50px;
-   
-  }
-  .techone {
-    width: 30%;
-    padding: 150px;
-    margin-left: 5px;
+
+
+
+  img.footerimg {
+    width: 60%;
 
   }
-  .sectiontwo {
-   
-    padding-right: 00px;
-    padding-left: 00px;
-   
-  }
 
-  
-    .whyus {
-   
-    padding-right: 10px;
-    padding-left: 10px;
-  
+  .footer-container li {
+    font-size: 22px;
+    line-height: 2.5;
+
   }
-    .footer-container {
-      padding-left: 50px;
-    }
-  }
+}

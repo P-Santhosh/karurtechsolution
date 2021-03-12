@@ -13,7 +13,7 @@
 
     .headfixed {
       position: fixed;
-      box-shadow: 1px 4px rgb(124, 124, 124);
+      box-shadow: 0px 0px 10px 1px rgb(124, 124, 124);
     }
 
     .homeheader {
@@ -36,23 +36,26 @@
 
     .homeheader>nav.headernav {
       display: flex;
+      
     }
 
     .homeheader>nav.headernav li {
       padding-top: 40px;
       list-style-type: none;
-
+      justify-content: space-between;
+      padding-right: 50px;
     }
 
     a.link {
 
       text-decoration: none;
-      padding: 25px;
+ justify-content: space-between;
       color: rgb(3, 36, 3);
     }
 
     a.link:hover {
       color: rgb(223, 28, 28);
+      
     }
 
 
@@ -60,10 +63,10 @@
 
     .centered {
 
-      position: absolute;
+      position: relative;
       text-align: center;
       color:black;
-      padding: 150px;
+      padding: 20px 100px 20px 100px ;
       line-height: 35px;
     
 
@@ -71,7 +74,7 @@
 
     .section-container {
       display: flex;
-      margin: 0px;
+    
       color:black;
       text-align: left;
       line-height: 50px;
@@ -79,20 +82,20 @@
     }
 
     .secone {
-      margin-top: 300px;
+    
       padding-left: 150px;
 
 
     }
 
     .sectwo {
-      margin-top: 300px;
+  
       padding-left: 150px;
 
     }
 
     .secthree {
-      margin-top: 300px;
+  
       padding-left: 150px;
    
 
@@ -104,9 +107,9 @@
     }
 
     .backgrdimg {
-      height: 696px;
+    
       background-size: cover;
-      background-image: linear-gradient(rgba(227, 245, 250, 0.8), rgb(230, 235, 238)), url("logo.jpeg");
+      background-image: linear-gradient(rgba(240, 245, 247, 0.8), rgb(230, 235, 238));
     }
 
     .col-container {
@@ -201,35 +204,33 @@
     .customer {
       display: flex;
       background-color: rgb(252, 251, 250);
-      padding-top: 30px;
+      padding-top: 20px;
       padding-left: 210px;
       padding-bottom: 30px;
     
     }
 
     .customerone {
-      width: 20%;
-      padding: 50px;
+      width: 30%;
+      padding: 10px;
     }
 
     .customertwo {
-      width: 20%;
-      padding: 50px;
+      width: 30%;
+      padding: 10px;
     }
 
     .customerthree {
-      width: 20%;
-      padding: 50px;
+      width: 30%;
+      padding: 10px;
     }
 
     .footer-container {
     display: flex;
     background-color: rgb(174, 252, 167);
     color: rgb(10, 39, 10);
-    padding-left: 200px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-
+   
+    padding: 60px 200px 40px 250px;
   }
 
   .footer-container li {
@@ -238,8 +239,8 @@
   }
 
   img.footerimg {
-    width: 60%;
-    height: 120px;
+    width: 70%;
+  
   }
 
   .footer-container p:hover {
@@ -247,23 +248,23 @@
   }
 
   .footerone {
-    width: 20%;
+    width: 25%;
     padding: 20px;
   }
 
   .footertwo {
-    width: 20%;
+    width: 25%;
     padding: 20px;
   }
 
   .footerthree {
-    width: 15%;
+    width: 20%;
     padding: 20px;
   }
   
 
   .footerfour {
-    width: 20%;
+    width: 25%;
     padding: 20px;
   }
    
@@ -284,6 +285,27 @@
 
 
       }
+      .section-container {
+      display: block;
+      font-size: 10px;
+      padding: 10px 50px 20px 200px;
+    
+      
+
+    }
+    
+    .centered {
+
+position: relative;
+text-align: justify;
+color:black;
+padding: 20px 50px 20px 50px ;
+line-height: 1.5;
+font-size: 14px;
+
+
+}
+
 
       .col-container {
         display: block;
@@ -364,6 +386,7 @@
       .sectwo,
       .secthree {
         padding-left: 50px;
+        
       }
 
       .customer {
